@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import CounterComponent from './components/counter.component';
+import FormComponent from './components/form.component';
+import Functions from './components/functions.component';
+import LiteralObject from './components/literalobject.component';
+import LoginComponent from './components/login.component';
+import TypeBasic from './components/TypeBasic.component';
+import UserComponent from './components/user.component';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mt-2">
+      <h1>Review Reactjs</h1>
+      <hr/>
+      <TypeBasic/>
+      <hr/>
+      <LiteralObject/>
+      <hr/>
+      <Functions/>
+      <hr/>
+      <CounterComponent/>
+      <hr/>
+      <LoginComponent/>
+      <hr/>
+      <UserComponent/>
+      <hr/>
+      <FormComponent/>
     </div>
   );
 }
